@@ -2,18 +2,18 @@
 import PackageDescription
 
 let package = Package(
-    name: "PhoneNumberKit",
+    name: "HLPhoneNumberKit",
     platforms: [
         .iOS(.v12), .macOS(.v10_13), .tvOS(.v12), .watchOS(.v4)
     ],
     products: [
-        .library(name: "PhoneNumberKit", targets: ["PhoneNumberKit"]),
-        .library(name: "PhoneNumberKit-Static", type: .static, targets: ["PhoneNumberKit"]),
-        .library(name: "PhoneNumberKit-Dynamic", type: .dynamic, targets: ["PhoneNumberKit"])
+        .library(name: "HLPhoneNumberKit", targets: ["HLPhoneNumberKit"]),
+        .library(name: "HLPhoneNumberKit-Static", type: .static, targets: ["HLPhoneNumberKit"]),
+        .library(name: "HLPhoneNumberKit-Dynamic", type: .dynamic, targets: ["HLPhoneNumberKit"])
     ],
     targets: [
-        .target(name: "PhoneNumberKit",
-                path: "PhoneNumberKit",
+        .target(name: "HLPhoneNumberKit",
+                path: "HLPhoneNumberKit",
                 exclude: ["Resources/Original",
                           "Resources/README.md",
                           "Resources/update_metadata.sh",
@@ -22,9 +22,9 @@ let package = Package(
                     .process("Resources/PhoneNumberMetadata.json"),
                     .copy("Resources/PrivacyInfo.xcprivacy")
                 ]),
-        .testTarget(name: "PhoneNumberKitTests",
-                    dependencies: ["PhoneNumberKit"],
-                    path: "PhoneNumberKitTests",
+        .testTarget(name: "HLPhoneNumberKitTests",
+                    dependencies: ["HLPhoneNumberKit"],
+                    path: "HLPhoneNumberKitTests",
                     exclude: ["Info.plist"])
     ]
 )

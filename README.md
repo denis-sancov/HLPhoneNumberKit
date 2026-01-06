@@ -23,10 +23,10 @@ Inspired by Google's libphonenumber.
 
 ## Usage
 
-Import PhoneNumberKit at the top of the Swift file that will interact with a phone number.
+import HLPhoneNumberKit at the top of the Swift file that will interact with a phone number.
 
 ```swift
-import PhoneNumberKit
+import HLPhoneNumberKit
 ```
 
 All of your interactions with PhoneNumberKit happen through a PhoneNumberUtility object. The first step you should take is to allocate one.

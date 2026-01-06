@@ -6,7 +6,7 @@
 //  Copyright © 2021 Roy Marmelstein. All rights reserved.
 //
 
-import PhoneNumberKit
+import HLPhoneNumberKit
 import XCTest
 
 final class PhoneNumberCodableTests: XCTestCase {

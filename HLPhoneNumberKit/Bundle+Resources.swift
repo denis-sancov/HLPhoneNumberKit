@@ -10,7 +10,7 @@ private class CurrentBundleFinder { }
 extension Bundle {
     static var phoneNumberKit: Bundle = {
         #if DEBUG && SWIFT_PACKAGE
-        let bundleName = "PhoneNumberKit_PhoneNumberKit"
+        let bundleName = "HLPhoneNumberKit_HLPhoneNumberKit"
         let candidates = [
             // Bundle should be present here when the package is linked into an App.
             Bundle.main.resourceURL,
