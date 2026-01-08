@@ -58,8 +58,8 @@ jobs:
 
       - name: Build - iOS
         run: |
-          set -o pipefail && xcodebuild -project "PhoneNumberKit.xcodeproj" -scheme "PhoneNumberKit" -destination "generic/platform=iOS" build
+          set -o pipefail && xcodebuild -project "HLPhoneNumberKit.xcodeproj" -scheme "HLPhoneNumberKit" -destination "generic/platform=iOS" build
       
       - name: Build - macOS
         run: |
-          set -o pipefail && xcodebuild -project "PhoneNumberKit.xcodeproj" -scheme "PhoneNumberKit-macOS" -destination "generic/platform=macOS" build
+          set -o pipefail && xcodebuild -project "HLPhoneNumberKit.xcodeproj" -scheme "HLPhoneNumberKit-macOS" -destination "generic/platform=macOS" build
